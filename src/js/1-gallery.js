@@ -1,6 +1,3 @@
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
-
 const images = [
   {
     preview:
@@ -89,6 +86,9 @@ function imagesTemplate(images) {
 const markup = imagesTemplate(images);
 
 galleryContainer.innerHTML = markup;
+
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 new SimpleLightbox('.gallery a', {
   captions: true,

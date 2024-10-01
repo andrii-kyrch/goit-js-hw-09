@@ -8,8 +8,20 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <p><a href="./index.html">Go back</a></p>
-    <form action="submit" method="get"></form>
-    <script type="module" src="./js/1-gallery.js"></script>
+    <main>
+      <p><a class="nav-link" href="./index.html">Go back</a></p>
+      <form class="feedback-form" autocomplete="off">
+        <label>
+          Email
+          <input type="email" name="email" autofocus />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="8"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <script type="module" src="./js/2-form.js"></script>
   </body>
 </html>
